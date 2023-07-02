@@ -1,0 +1,172 @@
+{
+  "entities": [
+    {
+      "id": "1000000",
+      "name": "Camera",
+      "isActive": true,
+      "position": {
+        "x": -1,
+        "y": 1,
+        "z": 10
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "parent": null,
+      "children": [],
+      "isClone": false,
+      "components": [
+        {
+          "id": "1000100",
+          "class": "Camera",
+          "props": {
+            "enabled": true,
+            "isOrthographic": false,
+            "nearClipPlane": 0.1,
+            "farClipPlane": 100,
+            "fieldOfView": 45,
+            "orthographicSize": 10,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "z": 1,
+              "w": 1
+            },
+            "priority": 0,
+            "enableFrustumCulling": true,
+            "clearFlags": 7
+          },
+          "methods": {}
+        }
+      ]
+    },
+    {
+      "id": "2c684262-1185-4ad7-a6a9-754a4be1c3e7",
+      "name": "Prefab",
+      "prefabSource": {"assetId": "9999999"},
+      "modification": [{
+        "target": "",
+        "path": "",
+        "value": ""
+      }]
+    }
+  ],
+  "plugins": [],
+  "scene": {
+    "background": {
+      "mode": 0,
+      "color": {
+        "r": 0.12,
+        "g": 0.12,
+        "b": 0.12,
+        "a": 1
+      },
+      "texture": null,
+      "skyMaterial": null,
+      "skyMesh": null
+    },
+    "ambient": {
+      "ambientLight": null,
+      "customAmbientLight": null,
+      "diffuseMode": 1,
+      "diffuseSolidColor": {
+        "r": 0.212,
+        "g": 0.227,
+        "b": 0.259,
+        "a": 1
+      },
+      "diffuseIntensity": 1,
+      "specularMode": "Sky",
+      "customSpecularTexture": null,
+      "bakerResolution": 128,
+      "specularIntensity": 1
+    },
+    "shadow": {
+      "castShadows": true,
+      "shadowResolution": 1,
+      "shadowDistance": 50,
+      "shadowCascades": 1
+    },
+    "fog": {
+      "fogMode": 0,
+      "fogStart": 0,
+      "fogEnd": 300,
+      "fogDensity": 0.01,
+      "fogColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5,
+        "a": 1
+      }
+    }
+  },
+  "files": [
+    {
+      "id": "9999999",
+      "type": "Prefab",
+      "virtualPath": "/Prefab/test.prefab",
+      "path": "/Prefab/test.prefab"
+    },
+    {
+      "id": "b4d3cab3-4277-4d53-b470-eaa01647601d",
+      "type": "EditorTexture2D",
+      "virtualPath": "/Assets/q11Gd.png",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*7HXOT6yIvd0AAAAAAAAAAAAADkp5AQ/q11Gd.png"
+    },
+    {
+      "id": "0000100",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Cuboid",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*c_gWSpjjb4EAAAAAAAAAAAAADkp5AQ/Cuboid.bin"
+    },
+    {
+      "id": "0000101",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Sphere",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*F6VFQq_cBHwAAAAAAAAAAAAADkp5AQ/Sphere.bin"
+    },
+    {
+      "id": "0000102",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Plane",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*1DG-SYaHWc4AAAAAAAAAAAAADkp5AQ/Plane.bin"
+    },
+    {
+      "id": "0000103",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Cylinder",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*eREeT6AHBa0AAAAAAAAAAAAADkp5AQ/Cylinder.bin"
+    },
+    {
+      "id": "0000104",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Capsule",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*1aGtT7iTt48AAAAAAAAAAAAADkp5AQ/Capsule.bin"
+    },
+    {
+      "id": "0000107",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Cone",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*CdyqTo2IsWgAAAAAAAAAAAAADkp5AQ/Cone.bin"
+    },
+    {
+      "id": "0000200",
+      "type": "Material",
+      "virtualPath": "/Internal/Material/DefaultMatLoremDefaultMatLoremDefaultMatLorem",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*JjtWSI9bUzcAAAAAAAAAAAAADkp5AQ/DefaultMatLoremDefaultMatLoremDefaultMatLorem.json"
+    },
+    {
+      "id": "485421b6-5f36-4151-a12b-fbb4f585407b",
+      "type": "EditorTexture2D",
+      "virtualPath": "/Internal/Material/biz-node.png",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*aa6WT65-xroAAAAAAAAAAAAADkp5AQ/biz-node.png"
+    }
+  ]
+}

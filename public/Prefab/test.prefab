@@ -1,0 +1,122 @@
+{
+  "entities": [
+    {
+      "id": "1000001",
+      "name": "DirectLight",
+      "isActive": true,
+      "position": {
+        "x": 2.5175158977508545,
+        "y": 2.4489316940307617,
+        "z": 1.8006858825683594
+      },
+      "rotation": {
+        "x": -59.6790115450179,
+        "y": -97.94349414912615,
+        "z": 63.9178496316784
+      },
+      "scale": {
+        "x": 0.9999998839816947,
+        "y": 0.9999999358212734,
+        "z": 0.9999999832241678
+      },
+      "parent": null,
+      "children": [],
+      "isClone": false,
+      "components": [
+        {
+          "id": "1000101",
+          "class": "DirectLight",
+          "props": {
+            "enabled": true,
+            "intensity": 2,
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "shadowType": 0,
+            "shadowBias": 1,
+            "shadowNormalBias": 1,
+            "shadowNearPlane": 0.1,
+            "shadowStrength": 1
+          },
+          "methods": {}
+        }
+      ]
+    },
+    {
+      "id": "08a79562-cb28-44e7-ad57-d45983f751a0",
+      "name": "Entity",
+      "isActive": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "parent": null,
+      "children": [
+        "817195b6-958d-4efc-9110-4daa0f9d5593"
+      ],
+      "isClone": false,
+      "components": []
+    },
+    {
+      "id": "817195b6-958d-4efc-9110-4daa0f9d5593",
+      "name": "Cuboid",
+      "isActive": true,
+      "position": {
+        "x": -0.11686968803405762,
+        "y": 0.040379591286182404,
+        "z": 2.0161333084106445
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "parent": "08a79562-cb28-44e7-ad57-d45983f751a0",
+      "children": [],
+      "isClone": false,
+      "components": [
+        {
+          "id": "71ea52a1-b3b1-48f3-b9c1-1ac895787223",
+          "class": "MeshRenderer",
+          "props": {
+            "enabled": true,
+            "mesh": {
+              "refId": "0000100"
+            },
+            "receiveShadows": true,
+            "castShadows": false,
+            "priority": 0
+          },
+          "methods": {
+            "setMaterial": [
+              [
+                {
+                  "refId": "0000200"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

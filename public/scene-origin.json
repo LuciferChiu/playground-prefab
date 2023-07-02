@@ -1,0 +1,274 @@
+{
+  "entities": [
+    {
+      "id": "1000000",
+      "name": "Camera",
+      "isActive": true,
+      "position": {
+        "x": -1,
+        "y": 1,
+        "z": 10
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "parent": null,
+      "children": [],
+      "isClone": false,
+      "components": [
+        {
+          "id": "1000100",
+          "class": "Camera",
+          "props": {
+            "enabled": true,
+            "isOrthographic": false,
+            "nearClipPlane": 0.1,
+            "farClipPlane": 100,
+            "fieldOfView": 45,
+            "orthographicSize": 10,
+            "viewport": {
+              "x": 0,
+              "y": 0,
+              "z": 1,
+              "w": 1
+            },
+            "priority": 0,
+            "enableFrustumCulling": true,
+            "clearFlags": 7
+          },
+          "methods": {}
+        }
+      ]
+    },
+    {
+      "id": "1000001",
+      "name": "DirectLight",
+      "isActive": true,
+      "position": {
+        "x": 2.5175158977508545,
+        "y": 2.4489316940307617,
+        "z": 1.8006858825683594
+      },
+      "rotation": {
+        "x": -59.6790115450179,
+        "y": -97.94349414912615,
+        "z": 63.9178496316784
+      },
+      "scale": {
+        "x": 0.9999998839816947,
+        "y": 0.9999999358212734,
+        "z": 0.9999999832241678
+      },
+      "parent": null,
+      "children": [],
+      "isClone": false,
+      "components": [
+        {
+          "id": "1000101",
+          "class": "DirectLight",
+          "props": {
+            "enabled": true,
+            "intensity": 2,
+            "color": {
+              "r": 1,
+              "g": 1,
+              "b": 1,
+              "a": 1
+            },
+            "shadowType": 0,
+            "shadowBias": 1,
+            "shadowNormalBias": 1,
+            "shadowNearPlane": 0.1,
+            "shadowStrength": 1
+          },
+          "methods": {}
+        }
+      ]
+    },
+    {
+      "id": "08a79562-cb28-44e7-ad57-d45983f751a0",
+      "name": "Entity",
+      "isActive": true,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "parent": null,
+      "children": [
+        "817195b6-958d-4efc-9110-4daa0f9d5593"
+      ],
+      "isClone": false,
+      "components": []
+    },
+    {
+      "id": "817195b6-958d-4efc-9110-4daa0f9d5593",
+      "name": "Cuboid",
+      "isActive": true,
+      "position": {
+        "x": -0.11686968803405762,
+        "y": 0.040379591286182404,
+        "z": 2.0161333084106445
+      },
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      },
+      "scale": {
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "parent": "08a79562-cb28-44e7-ad57-d45983f751a0",
+      "children": [],
+      "isClone": false,
+      "components": [
+        {
+          "id": "71ea52a1-b3b1-48f3-b9c1-1ac895787223",
+          "class": "MeshRenderer",
+          "props": {
+            "enabled": true,
+            "mesh": {
+              "refId": "0000100"
+            },
+            "receiveShadows": true,
+            "castShadows": false,
+            "priority": 0
+          },
+          "methods": {
+            "setMaterial": [
+              [
+                {
+                  "refId": "0000200"
+                }
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "plugins": [],
+  "scene": {
+    "background": {
+      "mode": 0,
+      "color": {
+        "r": 0.12,
+        "g": 0.12,
+        "b": 0.12,
+        "a": 1
+      },
+      "texture": null,
+      "skyMaterial": null,
+      "skyMesh": null
+    },
+    "ambient": {
+      "ambientLight": null,
+      "customAmbientLight": null,
+      "diffuseMode": 1,
+      "diffuseSolidColor": {
+        "r": 0.212,
+        "g": 0.227,
+        "b": 0.259,
+        "a": 1
+      },
+      "diffuseIntensity": 1,
+      "specularMode": "Sky",
+      "customSpecularTexture": null,
+      "bakerResolution": 128,
+      "specularIntensity": 1
+    },
+    "shadow": {
+      "castShadows": true,
+      "shadowResolution": 1,
+      "shadowDistance": 50,
+      "shadowCascades": 1
+    },
+    "fog": {
+      "fogMode": 0,
+      "fogStart": 0,
+      "fogEnd": 300,
+      "fogDensity": 0.01,
+      "fogColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5,
+        "a": 1
+      }
+    }
+  },
+  "files": [
+    {
+      "id": "b4d3cab3-4277-4d53-b470-eaa01647601d",
+      "type": "EditorTexture2D",
+      "virtualPath": "/Assets/q11Gd.png",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*7HXOT6yIvd0AAAAAAAAAAAAADkp5AQ/q11Gd.png"
+    },
+    {
+      "id": "0000100",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Cuboid",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*c_gWSpjjb4EAAAAAAAAAAAAADkp5AQ/Cuboid.bin"
+    },
+    {
+      "id": "0000101",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Sphere",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*F6VFQq_cBHwAAAAAAAAAAAAADkp5AQ/Sphere.bin"
+    },
+    {
+      "id": "0000102",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Plane",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*1DG-SYaHWc4AAAAAAAAAAAAADkp5AQ/Plane.bin"
+    },
+    {
+      "id": "0000103",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Cylinder",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*eREeT6AHBa0AAAAAAAAAAAAADkp5AQ/Cylinder.bin"
+    },
+    {
+      "id": "0000104",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Capsule",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*1aGtT7iTt48AAAAAAAAAAAAADkp5AQ/Capsule.bin"
+    },
+    {
+      "id": "0000107",
+      "type": "Mesh",
+      "virtualPath": "/Internal/Mesh/Cone",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*CdyqTo2IsWgAAAAAAAAAAAAADkp5AQ/Cone.bin"
+    },
+    {
+      "id": "0000200",
+      "type": "Material",
+      "virtualPath": "/Internal/Material/DefaultMatLoremDefaultMatLoremDefaultMatLorem",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*JjtWSI9bUzcAAAAAAAAAAAAADkp5AQ/DefaultMatLoremDefaultMatLoremDefaultMatLorem.json"
+    },
+    {
+      "id": "485421b6-5f36-4151-a12b-fbb4f585407b",
+      "type": "EditorTexture2D",
+      "virtualPath": "/Internal/Material/biz-node.png",
+      "path": "https://mdn.alipayobjects.com/oasis_be/afts/file/A*aa6WT65-xroAAAAAAAAAAAAADkp5AQ/biz-node.png"
+    }
+  ]
+}
