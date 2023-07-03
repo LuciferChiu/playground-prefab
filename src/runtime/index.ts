@@ -14,21 +14,26 @@ export async function createRuntime() {
 	engine.canvas.resizeByClientSize();
 
 
-	// const origin = await engine.resourceManager.load<Scene>({
-  //   url: '/scene-origin.json',
-  //   type: AssetType.Scene
-  // });
+	const originScene = await engine.resourceManager.load<Scene>({
+    url: '/scene-origin.json',
+    type: AssetType.Scene
+  });
 
 
-  const scene = await engine.resourceManager.load<Scene>({
+  const prefabScene = await engine.resourceManager.load<Scene>({
     url: '/scene.json',
     type: AssetType.Scene
   });
 
 
+  engine.sceneManager.activeScene = prefabScene;
+
+	const scene = engine.sceneManager.activeScene;
+
 	console.log(scene)
 
-  engine.sceneManager.activeScene = scene;
+	// const rootEntity = scene.createRootEntity('test');
+
 
 	// const scene = engine.sceneManager.activeScene;
 	// const rootEntity = scene.createRootEntity();
@@ -47,6 +52,7 @@ export async function createRuntime() {
 
 	// // init cube
 	// const cubeEntity = rootEntity.createChild("cube");
+	// cubeEntity.transform.position = new Vector3(1, 0, -2);
 	// const renderer = cubeEntity.addComponent(MeshRenderer);
 	// const mtl = new BlinnPhongMaterial(engine);
 	// const color = mtl.baseColor;
@@ -56,7 +62,6 @@ export async function createRuntime() {
 	// color.a = 1.0;
 	// renderer.mesh = PrimitiveMesh.createCuboid(engine);
 	// renderer.setMaterial(mtl);
-
 
 	engine.run();
 }
